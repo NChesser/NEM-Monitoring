@@ -58,7 +58,7 @@ class StatsDashboard extends React.Component {
             <div className={classes.statsBox}>
 
                 <Grid container spacing={16}>
-                    <Grid item xs={4}>
+                    <Grid item xs={5}>
                         <Paper className={classes.paperOverview}>
                             <Typography variant="title" color="inherit" className={classes.title}>
                                 Host Name: {this.state.name}
@@ -75,10 +75,10 @@ class StatsDashboard extends React.Component {
                         </Paper>
 
                     </Grid>
-                    <Grid item xs={8}>
+                    <Grid item xs={7}>
                         <Grid container spacing={16}>
                             {passedValues.map((value, index) =>
-                                <Grid item xs={3}>
+                                <Grid item xs>
                                     <Paper className={classes.paperBase} style={{ borderLeft: "10px solid " + statusColor[index] }}>
                                         <Typography variant="title" color="inherit" className={classes.values}>
                                             {value[0]}
